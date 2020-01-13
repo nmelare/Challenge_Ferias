@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-//typealias Receitasz = [Receita]
-
 struct Receita: Codable {
     var ingredientes: [String]
     var modoDePreparo: [String]
@@ -21,18 +19,18 @@ struct Receita: Codable {
 
 class InternReceita: NSObject {
     static func getAllRecepies() -> [Receita] {
-        var recepies: [Receita] = []
+        var receitas: [Receita] = []
         do {
             if let path = Bundle.main.path(forResource: NSLocalizedString("arquivoJson", comment: "nomeDoArquivoJson"), ofType: "json", inDirectory: nil)
             {
                 let url = URL(fileURLWithPath: path)
                 let recepiesData = try Data(contentsOf: url)
-                recepies = try JSONDecoder().decode([Receita].self, from: recepiesData)
-                return recepies
+                receitas = try JSONDecoder().decode([Receita].self, from: recepiesData)
+                return receitas
             }
         } catch {
-            print("Erro")
+            print("Erro ao carregar Json das receitas")
         }
-        return recepies
+        return receitas
     }
     }

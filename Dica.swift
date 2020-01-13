@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-//typealias Tutorial = [Tutorialz]
-
 struct Dica: Codable {
     var palavraschave: [String]
     var dicas: String
@@ -20,19 +18,19 @@ struct Dica: Codable {
 }
 
 class InternDica: NSObject {
-    static func getAllTutoriall() -> [Dica] {
-        var tutoriall: [Dica] = []
+    static func getAllTutorials() -> [Dica] {
+        var tutoriais: [Dica] = []
         do {
-            if let path = Bundle.main.path(forResource: "teste2", ofType: "json", inDirectory: nil)
+            if let path = Bundle.main.path(forResource: "TutoriaisPortugues", ofType: "json", inDirectory: nil)
             {
                 let url = URL(fileURLWithPath: path)
-                let tutoriallData = try Data(contentsOf: url)
-                tutoriall = try JSONDecoder().decode([Dica].self, from: tutoriallData)
-                return tutoriall
+                let tutorialData = try Data(contentsOf: url)
+                tutoriais = try JSONDecoder().decode([Dica].self, from: tutorialData)
+                return tutoriais
             }
         } catch {
-            print("Erro")
+            print("Erro ao carregar Json dos tutoriais")
         }
-        return tutoriall
+        return tutoriais
 }
 }
