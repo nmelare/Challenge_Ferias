@@ -22,5 +22,6 @@ class ReceitaViewController: UIViewController {
     func handleSettings() {
         settingsModal.handleMore()
         settingsModal.collectionViewSetUp()
+        settingsModal.firstAnimationModal()
     }
 }

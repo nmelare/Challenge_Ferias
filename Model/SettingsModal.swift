@@ -18,6 +18,7 @@ class SettingsModal: NSObject {
         recepieCollectionInformation.backgroundColor = UIColor.white
         return recepieCollectionInformation
     }()
+    let height:CGFloat = 600
     
     
     func handleMore() {
@@ -33,9 +34,16 @@ class SettingsModal: NSObject {
             
             window.addSubview(blackView)
             
+        }
+    }
+    
+    func firstAnimationModal() {
+        if let window = UIApplication.shared.keyWindow {
+            let y = window.frame.height - height
             UIView.animate(withDuration: 0.5) {
-                       self.blackView.alpha = 1
-                   }
+                self.blackView.alpha = 1
+                self.recepieCollectionView.frame = CGRect(x: 0, y: y, width: self.recepieCollectionView.frame.width, height: self.recepieCollectionView.frame.height)
+            }
         }
     }
     
@@ -43,22 +51,20 @@ class SettingsModal: NSObject {
     func collectionViewSetUp() {
         if let window = UIApplication.shared.keyWindow {
             
-            let height:CGFloat = 600
-            let y = window.frame.height - height
-            
             recepieCollectionView.frame = CGRect(x: 0, y: window.frame.height, width: window.frame.width, height: height)
             
             window.addSubview(recepieCollectionView)
             
-            UIView.animate(withDuration: 0.5) {
-                self.recepieCollectionView.frame = CGRect(x: 0, y: y, width: self.recepieCollectionView.frame.width, height: self.recepieCollectionView.frame.height)
-            }
         }
     }
     
     @objc func handleDismiss() {
         UIView.animate(withDuration: 0.5) {
             self.blackView.alpha = 0
+            
+            if let window = UIApplication.shared.keyWindow {
+                self.recepieCollectionView.frame = CGRect (x: 0, y: window.frame.height, width: self.recepieCollectionView.frame.width, height: self.recepieCollectionView.frame.height)
+            }
         }
     }
 }
