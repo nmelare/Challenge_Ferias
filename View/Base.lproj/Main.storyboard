@@ -22,11 +22,24 @@
                                     <constraint firstAttribute="height" constant="340" id="Sso-ke-sNk"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSc-fx-MvN">
+                                <rect key="frame" x="180" y="374" width="86" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="testModalButton:" destination="UC5-Rb-B0C" eventType="touchUpInside" id="IZf-Jh-Rap"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="mSc-fx-MvN" firstAttribute="leading" secondItem="g8B-fS-UeL" secondAttribute="leading" constant="180" id="5Ke-w9-fds"/>
                             <constraint firstItem="7VI-v7-fds" firstAttribute="top" secondItem="49j-qN-NPr" secondAttribute="top" id="98S-Em-FcE"/>
                             <constraint firstItem="7VI-v7-fds" firstAttribute="trailing" secondItem="g8B-fS-UeL" secondAttribute="trailing" id="UYX-v3-50X"/>
+                            <constraint firstItem="g8B-fS-UeL" firstAttribute="trailing" secondItem="mSc-fx-MvN" secondAttribute="trailing" constant="148" id="Utl-Ky-7iX"/>
+                            <constraint firstItem="mSc-fx-MvN" firstAttribute="top" secondItem="7VI-v7-fds" secondAttribute="bottom" constant="34" id="W4s-IL-hja"/>
                             <constraint firstItem="7VI-v7-fds" firstAttribute="leading" secondItem="g8B-fS-UeL" secondAttribute="leading" id="fBZ-2W-IwZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g8B-fS-UeL"/>

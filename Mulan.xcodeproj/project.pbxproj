@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F03459C23CF730800B77371 /* ReceitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03459B23CF730800B77371 /* ReceitaViewController.swift */; };
+		6F5DCCF723D01FF300651716 /* SettingsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5DCCF623D01FF300651716 /* SettingsModal.swift */; };
 		6F673F182282034D00506FD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F673F172282034D00506FD9 /* AppDelegate.swift */; };
 		6F673F1D2282034D00506FD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F673F1B2282034D00506FD9 /* Main.storyboard */; };
 		6F673F202282034D00506FD9 /* Mulan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F673F1E2282034D00506FD9 /* Mulan.xcdatamodeld */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		6F03459B23CF730800B77371 /* ReceitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaViewController.swift; sourceTree = "<group>"; };
+		6F5DCCF623D01FF300651716 /* SettingsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsModal.swift; path = Model/SettingsModal.swift; sourceTree = SOURCE_ROOT; };
 		6F673F142282034C00506FD9 /* Cuisine101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuisine101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F673F172282034D00506FD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F673F1C2282034D00506FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				6FE7B424228BB5AA00422A92 /* Dica.swift */,
 				6FE7B42B228DF22100422A92 /* Receita.swift */,
+				6F5DCCF623D01FF300651716 /* SettingsModal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				6FE7B42C228DF22100422A92 /* Receita.swift in Sources */,
 				6F03459C23CF730800B77371 /* ReceitaViewController.swift in Sources */,
+				6F5DCCF723D01FF300651716 /* SettingsModal.swift in Sources */,
 				6FE7B425228BB5AA00422A92 /* Dica.swift in Sources */,
 				6F673F182282034D00506FD9 /* AppDelegate.swift in Sources */,
 				6F673F202282034D00506FD9 /* Mulan.xcdatamodeld in Sources */,
