@@ -20,6 +20,16 @@ class SettingsModal: NSObject {
     }()
     let height:CGFloat = 600
     
+    var recepieCollectionViewDataSource = RecepieCollectionViewDataSource()
+    var recepieCollectionViewDelegate = RecepieCollectionViewDelegate()
+    
+    override init() {
+        super .init()
+        
+        recepieCollectionView.dataSource = recepieCollectionViewDataSource
+        recepieCollectionView.delegate = recepieCollectionViewDelegate
+        recepieCollectionView.register(RecepieCollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
+    }
     
     func handleMore() {
         
@@ -46,7 +56,6 @@ class SettingsModal: NSObject {
             }
         }
     }
-    
     
     func collectionViewSetUp() {
         if let window = UIApplication.shared.keyWindow {

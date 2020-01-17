@@ -24,4 +24,6 @@ class ReceitaViewController: UIViewController {
         settingsModal.collectionViewSetUp()
         settingsModal.firstAnimationModal()
     }
+    
+
 }
