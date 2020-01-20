@@ -15,6 +15,9 @@ struct Receita: Codable {
     var nomeDaImagem: String
     var nomeDaReceita: String
     var nomeDaImagem2: String
+    var tempoDePreparo: String
+    var quantasPessoasServe: String
+    var categoria: String
 }
 
 class InternReceita: NSObject {

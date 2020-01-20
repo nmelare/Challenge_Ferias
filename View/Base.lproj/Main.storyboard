@@ -60,7 +60,131 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1S-yl-2L6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175.36231884057972" y="24.776785714285712"/>
+            <point key="canvasLocation" x="736" y="23"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="SIs-Ee-jCF">
+            <objects>
+                <tableViewController id="84Z-5h-ex0" customClass="MenuTableViewController" customModule="Cuisine101" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AdL-DO-p5L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <segmentedControl key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" id="qBa-T5-8xa">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <segments>
+                                <segment title="Receitas"/>
+                                <segment title="Assados"/>
+                                <segment title="Cozidos"/>
+                                <segment title="Fritos"/>
+                            </segments>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="selectedSegmentTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="SegmentedControlAction:" destination="84Z-5h-ex0" eventType="valueChanged" id="4kd-0B-ibI"/>
+                            </connections>
+                        </segmentedControl>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDMenuCell" rowHeight="272" id="eec-7W-leg" customClass="CardsMenuTableViewCell" customModule="Cuisine101" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="60" width="414" height="272"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eec-7W-leg" id="ei4-iQ-FMP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cmL-Uo-gIm">
+                                            <rect key="frame" x="16" y="16" width="382" height="196"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY6-63-dox">
+                                            <rect key="frame" x="52" y="220" width="59" height="25.5"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                            <color key="textColor" red="0.90980392160000001" green="0.66274509800000003" blue="0.24313725489999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.90980392160000001" green="0.66274509800000003" blue="0.24313725489999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoZ-To-JgB">
+                                            <rect key="frame" x="71" y="253.5" width="32" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.63137254899999995" green="0.61176470589999998" blue="0.60784313729999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CL-NM-bZY">
+                                            <rect key="frame" x="138" y="253" width="44.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.63137254899999995" green="0.61176470589999998" blue="0.60784313729999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Perfil" translatesAutoresizingMaskIntoConstraints="NO" id="3pu-42-x0R">
+                                            <rect key="frame" x="119" y="255" width="13" height="13"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="13" id="JUb-cb-vEc"/>
+                                                <constraint firstAttribute="width" constant="13" id="rhY-XL-pL4"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Relogio" translatesAutoresizingMaskIntoConstraints="NO" id="4Rh-dC-iAR">
+                                            <rect key="frame" x="52" y="255.5" width="13" height="13"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="13" id="CGm-Pm-j6t"/>
+                                                <constraint firstAttribute="height" constant="13" id="Ezd-gF-ghn"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cmL-Uo-gIm" firstAttribute="leading" secondItem="ei4-iQ-FMP" secondAttribute="leading" constant="16" id="8Gq-fo-5gh"/>
+                                        <constraint firstItem="4Rh-dC-iAR" firstAttribute="top" secondItem="OY6-63-dox" secondAttribute="bottom" constant="10" id="AHR-fq-pXS"/>
+                                        <constraint firstAttribute="bottom" secondItem="cmL-Uo-gIm" secondAttribute="bottom" constant="60" id="Arb-VG-b1L"/>
+                                        <constraint firstItem="OY6-63-dox" firstAttribute="top" secondItem="cmL-Uo-gIm" secondAttribute="bottom" constant="8" id="DWT-Tg-bjp"/>
+                                        <constraint firstItem="4Rh-dC-iAR" firstAttribute="leading" secondItem="ei4-iQ-FMP" secondAttribute="leadingMargin" constant="32" id="EXo-Fc-iXY"/>
+                                        <constraint firstItem="3pu-42-x0R" firstAttribute="leading" secondItem="NoZ-To-JgB" secondAttribute="trailing" constant="16" id="MQX-qX-bp8"/>
+                                        <constraint firstItem="cmL-Uo-gIm" firstAttribute="top" secondItem="ei4-iQ-FMP" secondAttribute="top" constant="16" id="Qq5-PL-6KD"/>
+                                        <constraint firstItem="OY6-63-dox" firstAttribute="leading" secondItem="ei4-iQ-FMP" secondAttribute="leadingMargin" constant="32" id="XOd-pZ-HkK"/>
+                                        <constraint firstItem="3pu-42-x0R" firstAttribute="top" secondItem="cmL-Uo-gIm" secondAttribute="bottom" constant="43" id="ZYr-2x-ra0"/>
+                                        <constraint firstItem="NoZ-To-JgB" firstAttribute="top" secondItem="OY6-63-dox" secondAttribute="bottom" constant="8" id="ZeX-EA-rRS"/>
+                                        <constraint firstItem="NoZ-To-JgB" firstAttribute="leading" secondItem="4Rh-dC-iAR" secondAttribute="trailing" constant="6" id="bra-cZ-0Ks"/>
+                                        <constraint firstAttribute="trailing" secondItem="cmL-Uo-gIm" secondAttribute="trailing" constant="16" id="d0R-da-uan"/>
+                                        <constraint firstItem="2CL-NM-bZY" firstAttribute="top" secondItem="cmL-Uo-gIm" secondAttribute="bottom" constant="41" id="dN2-H2-Y5N"/>
+                                        <constraint firstItem="2CL-NM-bZY" firstAttribute="leading" secondItem="3pu-42-x0R" secondAttribute="trailing" constant="6" id="fCO-zb-tU2"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageRecipeCardMenu" destination="cmL-Uo-gIm" id="EZI-8k-8oI"/>
+                                    <outlet property="labelNameRecipeCardMenu" destination="OY6-63-dox" id="Tkm-bR-0jo"/>
+                                    <outlet property="labelPeopleRecipeCardMenu" destination="2CL-NM-bZY" id="ah4-uj-Rlg"/>
+                                    <outlet property="labelTimeRecipeCardMenu" destination="NoZ-To-JgB" id="BcL-o6-sJZ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="84Z-5h-ex0" id="mvk-Ae-YXh"/>
+                            <outlet property="delegate" destination="84Z-5h-ex0" id="hvf-3w-VA1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="5O3-rh-dY9"/>
+                    <connections>
+                        <outlet property="SegmentedControlOutlet" destination="qBa-T5-8xa" id="zCA-aQ-d95"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMF-s1-qte" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="23"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pv5-lQ-ALB">
+            <objects>
+                <navigationController id="HFB-2d-i2P" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="atq-cM-fPM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSr-u3-Hr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="23"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Perfil" width="16" height="16"/>
+        <image name="Relogio" width="16" height="16"/>
+    </resources>
 </document>
