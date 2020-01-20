@@ -12,18 +12,20 @@ import UIKit
 class ReceitaViewController: UIViewController {
     
     @IBOutlet weak var pratoImagem: UIImageView!
-    
+        
     @IBAction func testModalButton(_ sender: Any) {
         handleSettings()
     }
 
     let settingsModal = SettingsModal()
     
+    override func viewDidLoad() {
+        
+    }
+    
     func handleSettings() {
         settingsModal.handleMore()
         settingsModal.collectionViewSetUp()
         settingsModal.firstAnimationModal()
     }
-    
-
 }

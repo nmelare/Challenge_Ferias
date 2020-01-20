@@ -36,8 +36,7 @@ class SettingsModal: NSObject {
         if let window = UIApplication.shared.keyWindow {
             
             blackView.backgroundColor = UIColor(white: 0, alpha: 0.5)
-                   
-            blackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDismiss)))
+        blackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDismiss)))
                    
             blackView.alpha = 0
             blackView.frame = window.frame
@@ -63,7 +62,6 @@ class SettingsModal: NSObject {
             recepieCollectionView.frame = CGRect(x: 0, y: window.frame.height, width: window.frame.width, height: height)
             
             window.addSubview(recepieCollectionView)
-            
         }
     }
     
