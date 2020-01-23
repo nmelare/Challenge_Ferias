@@ -8,16 +8,20 @@
 
 import UIKit
 
-class RecepieCollectionViewDataSource: NSObject, UICollectionViewDataSource {
-    
+class TutorialCollectionViewDataSource: NSObject, UICollectionViewDataSource {
+
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 1
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
-        cell.backgroundColor = UIColor.red
-        return cell
-    }
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as? RecepieCollectionViewCell {
+//            cell.label.font = UIFont(name: "Arial", size: 20)
+        
+            return cell
+        }
+        return UICollectionViewCell()
+}
 }
