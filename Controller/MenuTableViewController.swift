@@ -23,7 +23,7 @@ class MenuTableViewController: UITableViewController {
     let segmentindicator: UIView = {
     let v = UIView()
     v.translatesAutoresizingMaskIntoConstraints = false
-    v.backgroundColor = UIColor.init(red: 353, green: 0, blue: 0, alpha: 1)
+    v.backgroundColor = #colorLiteral(red: 0.8326148391, green: 0.3012730181, blue: 0.3521553278, alpha: 1)
     return v
     }()
     
@@ -40,8 +40,8 @@ class MenuTableViewController: UITableViewController {
         SegmentedControlOutlet.selectedSegmentIndex = 0
         SegmentedControlOutlet.backgroundColor = .clear
         SegmentedControlOutlet.tintColor = .clear
-        SegmentedControlOutlet.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.init(name: "Avenir", size: 17) ?? UIFont.systemFont(ofSize: 20),NSAttributedString.Key.foregroundColor: UIColor.init(red: 353, green: 0, blue: 0, alpha: 1)], for: .selected)
-        SegmentedControlOutlet.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.init(name: "Avenir", size: 16) ?? UIFont.systemFont(ofSize: 20),NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .normal)
+        SegmentedControlOutlet.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.init(name: "Avenir-Medium", size: 17) ?? UIFont.boldSystemFont(ofSize: 21),NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.8326148391, green: 0.3012730181, blue: 0.3521553278, alpha: 1)], for: .selected)
+        SegmentedControlOutlet.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.init(name: "Avenir-Medium", size: 16) ?? UIFont.boldSystemFont(ofSize: 21),NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .normal)
         
         self.view.addSubview(segmentindicator)
         segmentindicator.topAnchor.constraint(equalTo: SegmentedControlOutlet.bottomAnchor).isActive = true
@@ -196,7 +196,7 @@ class MenuTableViewController: UITableViewController {
         
         if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecipePage") as? RecipeViewController {
             
-            viewController.recepie = recepie
+            viewController.renevue = recepie
             
             if let navigator = navigationController {
                 navigator.pushViewController(viewController, animated: true)

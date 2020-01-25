@@ -11,13 +11,15 @@ import UIKit
 
 struct Receita: Codable {
     var ingredientes: [String]
+    var imagensDosIngredientes: [String]
+    var quantidade: [String]
     var modoDePreparo: [String]
-    var nomeDaImagem: String
     var nomeDaReceita: String
     var nomeDaImagem2: String
     var tempoDePreparo: String
     var quantasPessoasServe: String
     var categoria: String
+    
 }
 
 class InternReceita: NSObject {

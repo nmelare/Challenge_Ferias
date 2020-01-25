@@ -19,7 +19,7 @@ class SettingsModal: NSObject {
         return recepieCollectionInformation
     }()
     let height:CGFloat = 600
-    
+
     var recepieCollectionViewDataSource = RecepieCollectionViewDataSource()
     var recepieCollectionViewDelegate = RecepieCollectionViewDelegate()
     
@@ -42,7 +42,6 @@ class SettingsModal: NSObject {
             blackView.frame = window.frame
             
             window.addSubview(blackView)
-            
         }
     }
     
