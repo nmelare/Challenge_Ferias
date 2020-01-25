@@ -10,7 +10,7 @@ import UIKit
 
 class RecepieCollectionViewCell: UICollectionViewCell {
     
-    let image: UIImage = UIImage(named: "CebolaPagina")!
+    let image: UIImage = UIImage(named: "ComoCortarCebolaPagina")!
     let label: UILabel = {
         let label = UILabel()
         label.text = "FUNFOU"

@@ -15,7 +15,8 @@ struct Receita: Codable {
     var quantidade: [String]
     var modoDePreparo: [String]
     var nomeDaReceita: String
-    var nomeDaImagem2: String
+    var nomeDaImagemMenu: String
+    var nomeDaImagemPaginaReceita: String
     var tempoDePreparo: String
     var quantasPessoasServe: String
     var categoria: String

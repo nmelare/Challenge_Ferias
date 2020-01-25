@@ -35,7 +35,7 @@ class RecipeViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        pratoImagem.image = UIImage(named:renevue.nomeDaImagem2)
+        pratoImagem.image = UIImage(named:renevue.nomeDaImagemPaginaReceita)
         titleOfRecepie.text = renevue.nomeDaReceita
         serverOfRecepieLabel.text = renevue.quantasPessoasServe
         timeOfRecepieLabel.text = renevue.tempoDePreparo

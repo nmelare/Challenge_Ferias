@@ -33,6 +33,7 @@ class MenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesSearchBarWhenScrolling = false
+        self.setNeedsStatusBarAppearanceUpdate()
         creatSearchBar()
         allrenevue = InternReceita.getAllRecepies()
         filterRenevue = allrenevue
@@ -48,6 +49,10 @@ class MenuTableViewController: UITableViewController {
         segmentindicator.heightAnchor.constraint(equalToConstant: 2).isActive = true
         segmentindicator.widthAnchor.constraint(equalToConstant: CGFloat(15 + SegmentedControlOutlet.titleForSegment(at: 0)!.count * 8)).isActive = true
         segmentindicator.centerXAnchor.constraint(equalToSystemSpacingAfter: SegmentedControlOutlet.centerXAnchor, multiplier: 0/4).isActive = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barStyle = .default
     }
     
     // MARK: - Search Bar
@@ -181,7 +186,7 @@ class MenuTableViewController: UITableViewController {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "IDMenuCell") as? CardsMenuTableViewCell {
             
-            cell.imageRecipeCardMenu.image = UIImage(named: filterRenevue[indexPath.row].nomeDaImagem2)
+            cell.imageRecipeCardMenu.image = UIImage(named: filterRenevue[indexPath.row].nomeDaImagemMenu)
             cell.labelNameRecipeCardMenu.text = filterRenevue[indexPath.row].nomeDaReceita
             cell.labelTimeRecipeCardMenu.text = filterRenevue[indexPath.row].tempoDePreparo
             cell.labelPeopleRecipeCardMenu.text = filterRenevue[indexPath.row].quantasPessoasServe

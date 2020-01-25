@@ -11,6 +11,7 @@
         <!--Recipe View Controller-->
         <scene sceneID="EoK-La-Yn3">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1S-yl-2L6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController restorationIdentifier="RecipePage" storyboardIdentifier="RecipePage" id="UC5-Rb-B0C" customClass="RecipeViewController" customModule="Cuisine101" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="49j-qN-NPr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -132,7 +133,6 @@
                         <outlet property="viewOfRecepie" destination="Rne-H9-xL5" id="jdB-FO-ZYP"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F1S-yl-2L6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-52.173913043478265" y="729.91071428571422"/>
         </scene>
