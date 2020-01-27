@@ -12,8 +12,8 @@ class RecepieCollectionViewCell: UICollectionViewCell {
     
     let label: UILabel = {
            let label = UILabel()
-           label.text = "Funfou"
            label.frame = CGRect.zero
+        label.text = "Foi"
            return  label
        }()
     
@@ -22,9 +22,9 @@ class RecepieCollectionViewCell: UICollectionViewCell {
         label.frame.size = CGSize(width: self.frame.width, height: self.frame.height)
         
         addSubview(label)
-        addConstrainsWithFormat(format: "H:|-20-[v0]|", views: label)
-        addConstrainsWithFormat(format: "V:|-40-[v0]|", views: label)
         
+        addConstrainsWithFormat(format: "H:|-20-[v0]|", views: label)
+        addConstrainsWithFormat(format: "V:|-30-[v0]|", views: label)
     }
     
     required init?(coder: NSCoder) {

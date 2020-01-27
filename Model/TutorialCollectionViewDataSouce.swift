@@ -9,17 +9,18 @@
 import UIKit
 
 class TutorialCollectionViewDataSource: NSObject, UICollectionViewDataSource {
+    
+    var tutorials : [Dica] = []
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return tutorials.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as? RecepieCollectionViewCell {
-//            cell.label.font = UIFont(name: "Arial", size: 20)
-        
+            cell.label.text = tutorials[indexPath.row].dicas
             return cell
         }
         return UICollectionViewCell()
