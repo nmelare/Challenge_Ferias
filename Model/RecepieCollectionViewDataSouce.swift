@@ -10,14 +10,19 @@ import UIKit
 
 class RecepieCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
-        cell.backgroundColor = UIColor.red
-        return cell
+        var tutorials : [Dica] = []
+
+        
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return tutorials.count
+        }
+        
+        
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as? RecepieCollectionViewCell {
+                cell.label.text = tutorials[indexPath.row].dicas
+                return cell
+            }
+            return UICollectionViewCell()
     }
 }
