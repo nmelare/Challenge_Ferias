@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F03459C23CF730800B77371 /* ReceitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03459B23CF730800B77371 /* ReceitaViewController.swift */; };
+		6F03459C23CF730800B77371 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03459B23CF730800B77371 /* RecipeViewController.swift */; };
 		6F5DCCF723D01FF300651716 /* SettingsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5DCCF623D01FF300651716 /* SettingsModal.swift */; };
 		6F673F182282034D00506FD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F673F172282034D00506FD9 /* AppDelegate.swift */; };
 		6F673F1D2282034D00506FD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F673F1B2282034D00506FD9 /* Main.storyboard */; };
 		6F673F202282034D00506FD9 /* Mulan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F673F1E2282034D00506FD9 /* Mulan.xcdatamodeld */; };
 		6F673F222282034E00506FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F673F212282034E00506FD9 /* Assets.xcassets */; };
 		6F673F252282034E00506FD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F673F232282034E00506FD9 /* LaunchScreen.storyboard */; };
+		6F806ABD23DF3D9500A48180 /* IngredientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F806ABC23DF3D9500A48180 /* IngredientsCollectionViewCell.swift */; };
 		6F842CA123D6555B003AB45D /* CardsMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F842CA023D6555B003AB45D /* CardsMenuTableViewCell.swift */; };
 		6F842CA323D655B1003AB45D /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F842CA223D655B1003AB45D /* MenuTableViewController.swift */; };
 		6F98234B23D1723F0081C484 /* RecepieCollectionViewDataSouce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98234A23D1723F0081C484 /* RecepieCollectionViewDataSouce.swift */; };
@@ -29,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F03459B23CF730800B77371 /* ReceitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaViewController.swift; sourceTree = "<group>"; };
+		6F03459B23CF730800B77371 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		6F5DCCF623D01FF300651716 /* SettingsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsModal.swift; path = Model/SettingsModal.swift; sourceTree = SOURCE_ROOT; };
 		6F673F142282034C00506FD9 /* Cuisine101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuisine101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F673F172282034D00506FD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		6F673F212282034E00506FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F673F242282034E00506FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F673F262282034E00506FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F806ABC23DF3D9500A48180 /* IngredientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IngredientsCollectionViewCell.swift; path = ../Mulan.xcodeproj/IngredientsCollectionViewCell.swift; sourceTree = "<group>"; };
 		6F842CA023D6555B003AB45D /* CardsMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsMenuTableViewCell.swift; sourceTree = "<group>"; };
 		6F842CA223D655B1003AB45D /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = ../Mulan.xcodeproj/MenuTableViewController.swift; sourceTree = "<group>"; };
 		6F98234A23D1723F0081C484 /* RecepieCollectionViewDataSouce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepieCollectionViewDataSouce.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				6F98235223D184F60081C484 /* RecepieCollectionViewDelegate.swift */,
 				6F98234A23D1723F0081C484 /* RecepieCollectionViewDataSouce.swift */,
 				6F842CA023D6555B003AB45D /* CardsMenuTableViewCell.swift */,
+				6F806ABC23DF3D9500A48180 /* IngredientsCollectionViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				6F842CA223D655B1003AB45D /* MenuTableViewController.swift */,
-				6F03459B23CF730800B77371 /* ReceitaViewController.swift */,
+				6F03459B23CF730800B77371 /* RecipeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,7 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FE7B42C228DF22100422A92 /* Receita.swift in Sources */,
-				6F03459C23CF730800B77371 /* ReceitaViewController.swift in Sources */,
+				6F03459C23CF730800B77371 /* RecipeViewController.swift in Sources */,
 				6F842CA323D655B1003AB45D /* MenuTableViewController.swift in Sources */,
 				6F98234B23D1723F0081C484 /* RecepieCollectionViewDataSouce.swift in Sources */,
 				6F5DCCF723D01FF300651716 /* SettingsModal.swift in Sources */,
@@ -227,6 +230,7 @@
 				6FE7B425228BB5AA00422A92 /* Dica.swift in Sources */,
 				6F842CA123D6555B003AB45D /* CardsMenuTableViewCell.swift in Sources */,
 				6F673F182282034D00506FD9 /* AppDelegate.swift in Sources */,
+				6F806ABD23DF3D9500A48180 /* IngredientsCollectionViewCell.swift in Sources */,
 				6F98235123D183FF0081C484 /* RecepieCollectionViewCell.swift in Sources */,
 				6F673F202282034D00506FD9 /* Mulan.xcdatamodeld in Sources */,
 			);
