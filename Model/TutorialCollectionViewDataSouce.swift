@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecepieCollectionViewDataSource: NSObject, UICollectionViewDataSource {
+class TutorialCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
         var tutorials : [Dica] = []
 
@@ -19,7 +19,7 @@ class RecepieCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as? RecepieCollectionViewCell {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as? TutorialCollectionViewCell {
                 cell.label.text = tutorials[indexPath.row].dicas
                 return cell
             }

@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="-880" y="23"/>
         </scene>
-        <!--Recipe View Controller-->
+        <!--Recepie View Controller-->
         <scene sceneID="YKM-cv-VKL">
             <objects>
-                <viewController restorationIdentifier="RecipePage" storyboardIdentifier="RecipePage" id="9J3-f1-SAr" customClass="RecipeViewController" customModule="Cuisine101" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="RecipePage" storyboardIdentifier="RecipePage" id="9J3-f1-SAr" customClass="RecepieViewController" customModule="Cuisine101" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jea-se-ZKt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

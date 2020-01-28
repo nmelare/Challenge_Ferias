@@ -8,11 +8,11 @@
 
 import UIKit
 
-class RecepieCollectionViewDelegate: NSObject, UICollectionViewDelegate {
+class TutorialCollectionViewDelegate: NSObject, UICollectionViewDelegate {
     
 }
 
-extension RecepieCollectionViewDelegate: UICollectionViewDelegateFlowLayout {
+extension TutorialCollectionViewDelegate: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: 100)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecepieCollectionViewCell: UICollectionViewCell {
+class TutorialCollectionViewCell: UICollectionViewCell {
     
     let label: UILabel = {
            let label = UILabel()

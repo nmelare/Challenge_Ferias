@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RecipeViewController: UIViewController {
+class RecepieViewController: UIViewController {
      
         struct Ingredient {
             var name: String
@@ -85,10 +85,10 @@ class RecipeViewController: UIViewController {
         }()
     }
 
-    extension RecipeViewController: UICollectionViewDelegateFlowLayout  {
+    extension RecepieViewController: UICollectionViewDelegateFlowLayout  {
     }
 
-    extension RecipeViewController: UICollectionViewDataSource {
+    extension RecepieViewController: UICollectionViewDataSource {
        
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             return CGSize(width: 70, height: 130)
@@ -102,7 +102,7 @@ class RecipeViewController: UIViewController {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellRecepie", for: indexPath) as! IngredientsCollectionViewCell
             //Configure cell with photo from parent ViewController
             for i in 0...renevue.ingredientes.count - 1 {
-                data.append(RecipeViewController.Ingredient.init(name: renevue.ingredientes[i], image: UIImage(named: renevue.imagensDosIngredientes[i])!, dose: renevue.quantidade[i]))
+                data.append(RecepieViewController.Ingredient.init(name: renevue.ingredientes[i], image: UIImage(named: renevue.imagensDosIngredientes[i])!, dose: renevue.quantidade[i]))
             }
             cell.data = self.data[indexPath.row]
             return cell
