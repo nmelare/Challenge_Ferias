@@ -14,10 +14,8 @@
 		6F673F202282034D00506FD9 /* Mulan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F673F1E2282034D00506FD9 /* Mulan.xcdatamodeld */; };
 		6F673F222282034E00506FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F673F212282034E00506FD9 /* Assets.xcassets */; };
 		6F673F252282034E00506FD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F673F232282034E00506FD9 /* LaunchScreen.storyboard */; };
-		6F806ABD23DF3D9500A48180 /* IngredientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F806ABC23DF3D9500A48180 /* IngredientsCollectionViewCell.swift */; };
 		6F806ABF23DF426500A48180 /* Extencion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F806ABE23DF426500A48180 /* Extencion.swift */; };
 		6F842CA123D6555B003AB45D /* CardsMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F842CA023D6555B003AB45D /* CardsMenuTableViewCell.swift */; };
-		6F842CA323D655B1003AB45D /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F842CA223D655B1003AB45D /* MenuTableViewController.swift */; };
 		6F98234B23D1723F0081C484 /* TutorialCollectionViewDataSouce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98234A23D1723F0081C484 /* TutorialCollectionViewDataSouce.swift */; };
 		6F98235123D183FF0081C484 /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98235023D183FF0081C484 /* TutorialCollectionViewCell.swift */; };
 		6F98235323D184F60081C484 /* TutorialCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F98235223D184F60081C484 /* TutorialCollectionViewDelegate.swift */; };
@@ -28,6 +26,8 @@
 		6FE7B423228BB20500422A92 /* TutoriaisIngles.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7B422228BB20500422A92 /* TutoriaisIngles.json */; };
 		6FE7B425228BB5AA00422A92 /* Dica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7B424228BB5AA00422A92 /* Dica.swift */; };
 		6FE7B42C228DF22100422A92 /* Receita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7B42B228DF22100422A92 /* Receita.swift */; };
+		E037E2C823E1015300A21059 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037E2C723E1015300A21059 /* MenuTableViewController.swift */; };
+		E037E2CA23E101A500A21059 /* IngredientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037E2C923E101A500A21059 /* IngredientsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +40,8 @@
 		6F673F212282034E00506FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F673F242282034E00506FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F673F262282034E00506FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F806ABC23DF3D9500A48180 /* IngredientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IngredientsCollectionViewCell.swift; path = ../Mulan.xcodeproj/IngredientsCollectionViewCell.swift; sourceTree = "<group>"; };
 		6F806ABE23DF426500A48180 /* Extencion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extencion.swift; sourceTree = "<group>"; };
 		6F842CA023D6555B003AB45D /* CardsMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsMenuTableViewCell.swift; sourceTree = "<group>"; };
-		6F842CA223D655B1003AB45D /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = ../Mulan.xcodeproj/MenuTableViewController.swift; sourceTree = "<group>"; };
 		6F98234A23D1723F0081C484 /* TutorialCollectionViewDataSouce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewDataSouce.swift; sourceTree = "<group>"; };
 		6F98235023D183FF0081C484 /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
 		6F98235223D184F60081C484 /* TutorialCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		6FE7B422228BB20500422A92 /* TutoriaisIngles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TutoriaisIngles.json; sourceTree = "<group>"; };
 		6FE7B424228BB5AA00422A92 /* Dica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dica.swift; sourceTree = "<group>"; };
 		6FE7B42B228DF22100422A92 /* Receita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receita.swift; sourceTree = "<group>"; };
+		E037E2C723E1015300A21059 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		E037E2C923E101A500A21059 /* IngredientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 				6F98235223D184F60081C484 /* TutorialCollectionViewDelegate.swift */,
 				6F98234A23D1723F0081C484 /* TutorialCollectionViewDataSouce.swift */,
 				6F842CA023D6555B003AB45D /* CardsMenuTableViewCell.swift */,
-				6F806ABC23DF3D9500A48180 /* IngredientsCollectionViewCell.swift */,
+				E037E2C923E101A500A21059 /* IngredientsCollectionViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 		6FE9DA5D23CFB16000F6AA77 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6F842CA223D655B1003AB45D /* MenuTableViewController.swift */,
+				E037E2C723E1015300A21059 /* MenuTableViewController.swift */,
 				6F03459B23CF730800B77371 /* RecepieViewController.swift */,
 			);
 			path = Controller;
@@ -226,15 +226,15 @@
 			files = (
 				6FE7B42C228DF22100422A92 /* Receita.swift in Sources */,
 				6F03459C23CF730800B77371 /* RecepieViewController.swift in Sources */,
-				6F842CA323D655B1003AB45D /* MenuTableViewController.swift in Sources */,
 				6F806ABF23DF426500A48180 /* Extencion.swift in Sources */,
+				E037E2CA23E101A500A21059 /* IngredientsCollectionViewCell.swift in Sources */,
 				6F98234B23D1723F0081C484 /* TutorialCollectionViewDataSouce.swift in Sources */,
 				6F5DCCF723D01FF300651716 /* SettingsModal.swift in Sources */,
 				6F98235323D184F60081C484 /* TutorialCollectionViewDelegate.swift in Sources */,
 				6FE7B425228BB5AA00422A92 /* Dica.swift in Sources */,
 				6F842CA123D6555B003AB45D /* CardsMenuTableViewCell.swift in Sources */,
+				E037E2C823E1015300A21059 /* MenuTableViewController.swift in Sources */,
 				6F673F182282034D00506FD9 /* AppDelegate.swift in Sources */,
-				6F806ABD23DF3D9500A48180 /* IngredientsCollectionViewCell.swift in Sources */,
 				6F98235123D183FF0081C484 /* TutorialCollectionViewCell.swift in Sources */,
 				6F673F202282034D00506FD9 /* Mulan.xcdatamodeld in Sources */,
 			);
@@ -396,7 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D6BLGKTBJB;
+				DEVELOPMENT_TEAM = PUT3745C65;
 				INFOPLIST_FILE = Mulan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -414,7 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D6BLGKTBJB;
+				DEVELOPMENT_TEAM = PUT3745C65;
 				INFOPLIST_FILE = Mulan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
