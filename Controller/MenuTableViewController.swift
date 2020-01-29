@@ -23,7 +23,7 @@ class MenuTableViewController: UITableViewController {
     let segmentindicator: UIView = {
     let v = UIView()
     v.translatesAutoresizingMaskIntoConstraints = false
-    v.backgroundColor = #colorLiteral(red: 0.8326148391, green: 0.3012730181, blue: 0.3521553278, alpha: 1)
+    v.backgroundColor = #colorLiteral(red: 0.831372549, green: 0.3019607843, blue: 0.3529411765, alpha: 1)
     return v
     }()
     

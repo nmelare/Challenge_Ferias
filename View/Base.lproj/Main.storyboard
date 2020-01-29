@@ -25,6 +25,7 @@
                                 <segment title="Assados"/>
                                 <segment title="Cozidos"/>
                                 <segment title="Fritos"/>
+                                <segment title="Bebidas"/>
                             </segments>
                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="selectedSegmentTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -122,6 +123,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="atq-cM-fPM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.83137254901960778" green="0.30196078431372547" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="84Z-5h-ex0" kind="relationship" relationship="rootViewController" id="1eL-0S-z5x"/>
@@ -261,7 +263,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Perfil" width="16" height="16"/>
-        <image name="Relogio" width="16" height="16"/>
+        <image name="Perfil" width="66.666664123535156" height="66.666664123535156"/>
+        <image name="Relogio" width="66.666664123535156" height="66.666664123535156"/>
     </resources>
 </document>
