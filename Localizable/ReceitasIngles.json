@@ -1,6 +1,6 @@
 [
     {
-        "ingredientes": ["Egg", "Óleo", "Sal", " Pimenta"],
+        "ingredientes": ["Egg", "Óleo", "Sal", "Pimenta"],
         "imagensDosIngredientes":["CardOvo", "CardOleo", "CardSal", "CardPimenta"],
         "quantidade": ["1 unidade", "1 colher", "A gosto", "A gosto"],
         "modoDePreparo": ["1. Primeiro pegue a frigideira que você tiver (de preferência  24 à 28 cm de diâmetro) e jogue um fio de óleo (uma colher).", "\n 2. Coloque-a em cima de uma das bocas do fogão e ligue-o, deixando o óleo esquentar por 30 segundos, tomando cuidado para não deixar queimar.", "\n 3. Quebre com cuidado o ovo dentro da frigideira sem quebrar a gema (veja nosso tutorial de como quebrar um ovo) e tempere com sal e pimenta, se quiser e quanto quiser, lembrando que hipertensão é um problema sério.",
@@ -10,7 +10,7 @@
     "nomeDaReceita": "Fried Egg",
     "tempoDePreparo": "5 minutes",
     "quantasPessoasServe": "Serves 1",
-    "categoria": "Frying"
+    "categoria": "Frying",
 },
 {
     "ingredientes":["Ovo(s)", "Água", "Sal"],

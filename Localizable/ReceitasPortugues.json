@@ -10,7 +10,8 @@
     "nomeDaReceita": "Ovo Frito",
     "tempoDePreparo": "5 minutes",
     "quantasPessoasServe": "Serves 1",
-    "categoria": "Frying"
+    "categoria": "Frying",
+    "nomeDaDica": "Dica: Como quebrar ovos"
 },
 {
     "ingredientes":["Ovo(s)", "Água", "Sal"],
@@ -22,7 +23,8 @@
         "nomeDaReceita": "Ovo Cozido",
         "tempoDePreparo": "15 minutes",
         "quantasPessoasServe": "Serves 1",
-        "categoria": "Cooked"
+        "categoria": "Cooked",
+        "nomeDaDica": ""
     },
     {
         "ingredientes": ["Arroz", "Água", "Alho", "Cebola", "Sal", "Óleo"],
@@ -34,7 +36,8 @@
         "nomeDaReceita": "Arroz Branco",
         "tempoDePreparo": "20 minutes",
         "quantasPessoasServe": "Serves 1",
-        "categoria": "Cooked"
+        "categoria": "Cooked",
+        "nomeDaDica": "Dica: Como cortar cebolas"
     },
     {
         "ingredientes": ["Frango", "Alho", "Sal", "Pimenta"],
@@ -46,7 +49,8 @@
         "nomeDaReceita": "Frango",
         "tempoDePreparo": "25 minutes",
         "quantasPessoasServe": "Serves 1",
-        "categoria": "Roast"
+        "categoria": "Roast",
+        "nomeDaDica": ""
     },
     {
         "ingredientes": ["Café", "Água"],
@@ -58,7 +62,8 @@
         "nomeDaReceita":"Café",
         "tempoDePreparo": "15 minutes",
         "quantasPessoasServe": "Serves 1",
-        "categoria": "Drink"
+        "categoria": "Drink",
+        "nomeDaDica": ""
     },
     {
         "ingredientes": ["Feijão", "Cebola", "Água", "Alho", "Óleo", "Louro", "Sal", "Pimenta"],
@@ -70,6 +75,7 @@
         "nomeDaReceita":"Feijāo",
         "tempoDePreparo": "50 minutes",
         "quantasPessoasServe": "Serves 2",
-        "categoria": "Cooked"
+        "categoria": "Cooked",
+        "nomeDaDica": "Dica: Como usar panela de pressão"
     }
 ]

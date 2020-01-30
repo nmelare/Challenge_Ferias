@@ -48,11 +48,13 @@ class RecepieViewController: UIViewController {
             
             testTutorialButton.layer.cornerRadius = 20
             testTutorialButton.backgroundColor = .white
+            testTutorialButton.titleLabel?.text = renevue.nomeDaDica
+            testTutorialButton.setTitle(renevue.nomeDaDica, for: .normal)
                         
         self.navigationController!.navigationBar.topItem?.title = "";
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationController!.navigationBar.isTranslucent = true
-            self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
             
             view.addSubview(collectionView)
             collectionView.backgroundColor = .none

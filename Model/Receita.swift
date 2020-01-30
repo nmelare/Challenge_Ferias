@@ -20,6 +20,7 @@ struct Receita: Codable {
         var tempoDePreparo: String
         var quantasPessoasServe: String
         var categoria: String
+        var nomeDaDica: String
         
     }
 

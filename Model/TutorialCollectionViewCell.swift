@@ -10,6 +10,7 @@ import UIKit
 
 class TutorialCollectionViewCell: UICollectionViewCell {
     
+    
     let label: UILabel = {
            let label = UILabel()
            label.frame = CGRect.zero

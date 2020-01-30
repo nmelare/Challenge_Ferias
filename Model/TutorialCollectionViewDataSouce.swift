@@ -14,7 +14,7 @@ class TutorialCollectionViewDataSource: NSObject, UICollectionViewDataSource {
 
         
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return tutorials.count
+            return 1
         }
         
         

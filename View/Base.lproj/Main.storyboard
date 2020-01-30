@@ -194,17 +194,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MV-hp-nrI">
-                                        <rect key="frame" x="24" y="388.5" width="366" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                        <color key="textColor" red="0.63137254899999995" green="0.61176470589999998" blue="0.60784313729999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-7y-KNt">
-                                        <rect key="frame" x="289" y="25" width="93" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-7y-KNt">
+                                        <rect key="frame" x="24" y="388.5" width="36" height="34"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Dica">
                                             <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -212,6 +205,12 @@
                                             <action selector="testModalButton:" destination="9J3-f1-SAr" eventType="touchUpInside" id="WcK-Rn-6qK"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MV-hp-nrI">
+                                        <rect key="frame" x="24" y="438.5" width="366" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" red="0.63137254899999995" green="0.61176470589999998" blue="0.60784313729999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -227,9 +226,11 @@
                                     <constraint firstItem="0MV-hp-nrI" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="V7j-rl-640"/>
                                     <constraint firstItem="SV9-sw-YVm" firstAttribute="leading" secondItem="iGO-Wi-lCl" secondAttribute="trailing" constant="8" id="bsF-h8-gsR"/>
                                     <constraint firstAttribute="trailing" secondItem="0MV-hp-nrI" secondAttribute="trailing" constant="24" id="e4u-gz-xeB"/>
+                                    <constraint firstItem="9jJ-7y-KNt" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="flW-O8-qKG"/>
                                     <constraint firstItem="iGO-Wi-lCl" firstAttribute="top" secondItem="ruD-cb-TRp" secondAttribute="top" constant="74" id="hFW-zq-5BN"/>
                                     <constraint firstItem="lAh-hb-5fF" firstAttribute="top" secondItem="o8J-v5-9NQ" secondAttribute="bottom" constant="40" id="nhJ-3C-fTr"/>
-                                    <constraint firstItem="0MV-hp-nrI" firstAttribute="top" secondItem="ncR-MT-iVL" secondAttribute="bottom" constant="16" id="sWU-h3-mE1"/>
+                                    <constraint firstItem="0MV-hp-nrI" firstAttribute="top" secondItem="9jJ-7y-KNt" secondAttribute="bottom" constant="16" id="oXk-9h-h0J"/>
+                                    <constraint firstItem="9jJ-7y-KNt" firstAttribute="top" secondItem="ncR-MT-iVL" secondAttribute="bottom" constant="16" id="rkd-rl-NuN"/>
                                     <constraint firstItem="lAh-hb-5fF" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="xUM-BT-HRf"/>
                                     <constraint firstItem="SV9-sw-YVm" firstAttribute="top" secondItem="ruD-cb-TRp" secondAttribute="top" constant="72" id="z3j-HS-haS"/>
                                 </constraints>
