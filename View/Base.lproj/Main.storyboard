@@ -201,10 +201,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-7y-KNt">
-                                        <rect key="frame" x="272" y="476" width="86" height="48"/>
+                                        <rect key="frame" x="289" y="25" width="93" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Dica">
                                             <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -252,6 +253,7 @@
                         <outlet property="methodOfPreparation" destination="0MV-hp-nrI" id="Ra9-fB-z5h"/>
                         <outlet property="pratoImagem" destination="yGX-Ew-tbu" id="Gsr-Wg-vii"/>
                         <outlet property="serverOfRecepieLabel" destination="SV9-sw-YVm" id="rUe-eG-1ou"/>
+                        <outlet property="testTutorialButton" destination="9jJ-7y-KNt" id="soc-0L-V0V"/>
                         <outlet property="timeOfRecepieLabel" destination="o8J-v5-9NQ" id="GLc-8s-feV"/>
                         <outlet property="titleOfRecepie" destination="AsV-jn-fs7" id="tJj-SE-rgt"/>
                         <outlet property="viewOfRecepie" destination="ruD-cb-TRp" id="ycu-Xn-3mH"/>
@@ -259,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRg-or-L8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="23"/>
+            <point key="canvasLocation" x="692.75362318840587" y="22.767857142857142"/>
         </scene>
     </scenes>
     <resources>

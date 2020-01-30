@@ -20,7 +20,8 @@ class RecepieViewController: UIViewController {
         var renevue: Receita!
         var data: [Ingredient] = []
         let settingsModal = SettingsModal()
-        @IBOutlet weak var pratoImagem: UIImageView!
+    @IBOutlet weak var testTutorialButton: UIButton!
+    @IBOutlet weak var pratoImagem: UIImageView!
         @IBAction func testModalButton(_ sender: Any) {
             handleSettings()
         }
@@ -45,6 +46,9 @@ class RecepieViewController: UIViewController {
             viewOfRecepie.layer.cornerRadius = 20
             view.addSubview(viewOfRecepie)
             
+            testTutorialButton.layer.cornerRadius = 20
+            testTutorialButton.backgroundColor = .white
+                        
         self.navigationController!.navigationBar.topItem?.title = "";
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationController!.navigationBar.isTranslucent = true
@@ -52,6 +56,7 @@ class RecepieViewController: UIViewController {
             
             view.addSubview(collectionView)
             collectionView.backgroundColor = .none
+            collectionView.showsHorizontalScrollIndicator = false
             collectionView.topAnchor.constraint(equalTo: labelHeaderIngredients.bottomAnchor, constant: 16).isActive = true
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
