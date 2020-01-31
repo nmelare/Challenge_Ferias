@@ -129,12 +129,10 @@ class MenuTableViewController: UITableViewController {
         UIView.animate(withDuration: 0.5, animations: {
         self.segmentindicator.transform = CGAffineTransform(scaleX: 1.4, y: 1)
             self.view.layoutIfNeeded()
-
         }) { (finish) in
         UIView.animate(withDuration: 0.4, animations: {
         self.segmentindicator.transform = CGAffineTransform.identity
             self.view.layoutIfNeeded()
-
         })
         }
         tableView.reloadData()

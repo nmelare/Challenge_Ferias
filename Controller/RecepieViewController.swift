@@ -43,12 +43,10 @@ class RecepieViewController: UIViewController {
             timeOfRecepieLabel.text = renevue.tempoDePreparo
             textMethodOfPreparation.text = renevue.modoDePreparo.joined(separator: "\n")
       
-            viewOfRecepie.backgroundColor = .white
             viewOfRecepie.layer.cornerRadius = 20
             view.addSubview(viewOfRecepie)
             
             testTutorialButton.layer.cornerRadius = 20
-            testTutorialButton.backgroundColor = .white
             testTutorialButton.setTitle(renevue.nomeDaDica, for: .normal)
                         
         self.navigationController!.navigationBar.topItem?.title = "";
@@ -59,10 +57,10 @@ class RecepieViewController: UIViewController {
             view.addSubview(collectionView)
             collectionView.backgroundColor = .none
             collectionView.showsHorizontalScrollIndicator = false
-            collectionView.topAnchor.constraint(equalTo: labelHeaderIngredients.bottomAnchor, constant: 16).isActive = true
+            collectionView.topAnchor.constraint(equalTo: labelHeaderIngredients.bottomAnchor, constant: 8).isActive = true
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
-          collectionView.heightAnchor.constraint(equalToConstant: 144).isActive = true
+          collectionView.heightAnchor.constraint(equalToConstant: 130).isActive = true
             
             collectionView.delegate = self
             collectionView.dataSource = self
