@@ -11,7 +11,8 @@
     "tempoDePreparo": "5 minutes",
     "quantasPessoasServe": "Serves 1",
     "categoria": "Frying",
-    "nomeDaDica": "Dica: Como quebrar ovos"
+    "nomeDaDica": "Dica: Como quebrar ovos",
+    "dicas": "Ovos sempre são algo complicado de se lidar, e quebra-los é o primeiro passo para fazer qualquer coisa, então nesse tutorial mostraremos como quebrar ovos de modo fácil e sem deixar as cascas cairem dentro da receita.\n \n Vamos lá: Primeiro pegue o ovo e segure-o com uma mão em formato de concha. Bata a superfície do ovo, de preferência próxima ao centro, na quina da mesa ou da pia devagar até rachar. \n \n Não use muita força, pois você pode quebrar a gema ou ovo pode estraçalhar.\n \n Segure o ovo em cima da tigela (ou do local que vai querer coloca-lo). \n \n  Depois disso, coloque seus dedões sobre a rachadura e seus outros dedos na parte de baixo do ovo. Agora, devagar, pressione seus dedões na rachadura e puxe os outros dedos ao mesmo tempo, formando um coração invertido. Deixe o ovo cair na tigela e pronto! Já pode adiciona-lo a suas receitas."
 },
 {
     "ingredientes":["Ovo(s)", "Água", "Sal"],
@@ -24,7 +25,8 @@
         "tempoDePreparo": "15 minutes",
         "quantasPessoasServe": "Serves 1",
         "categoria": "Cooked",
-        "nomeDaDica": ""
+        "nomeDaDica": "",
+        "dicas": ""
     },
     {
         "ingredientes": ["Arroz", "Água", "Alho", "Cebola", "Sal", "Óleo"],
@@ -37,7 +39,8 @@
         "tempoDePreparo": "20 minutes",
         "quantasPessoasServe": "Serves 1",
         "categoria": "Cooked",
-        "nomeDaDica": "Dica: Como cortar cebolas"
+        "nomeDaDica": "Dica: Como cortar cebolas",
+        "dicas": " Sabemos que cortar cebolas pode ser um pouco complicado, principalmente quando você tem pouca experiência. Porém, nesse tutorial, nós vamos ensinar como cortar a cebola em cubos e não errar!\n \n Muito bem, antes de tudo, você vai precisar descascar a cebola, e não tem muito segredo, você só corta as duas extremidades, o suficiente para fazer a cebola ficar em pé na sua tábua ou superfície. Depois você só precisa tirar a casca da cebola, que é toda parte marrom, mas se a primeira camada da cebola estiver seca ou viscosa, pode tirar também. \n \n Muito bem, depois de ter limpado a cebola, vamos começar a cortar. É mais fácil fazer em duas metades, mesmo que vá usar a cebola inteira. Então com a sua faca faça um corte vertical, dividindo a cebola ao meio.\n \n Tendo as duas metades, agora você vai precisar pegar uma das metades, virá-la com a face cortada para a tábua, ou qualquer outra superfície que você esteja usando. Você fará cortes verticais seguindo as “marquinhas” da cebola, o que vai dar a você varias tirinhas. Se você não souber quais marquinhas são , não tem problema. Só corte em tirinhas finas.\n \n Agora você vai virar as tirinhas de forma que você deixe as pontinhas delas viradas fazendo um ângulo de 90˚ com a sua faca e faça mais cortes verticais, de modo que você obtenha cubinhos. \n \n Obs: Caso não queira chorar cortando cebola, coloque-a antes no freezer por 5 minutos."
     },
     {
         "ingredientes": ["Frango", "Alho", "Sal", "Pimenta"],
@@ -50,7 +53,8 @@
         "tempoDePreparo": "25 minutes",
         "quantasPessoasServe": "Serves 1",
         "categoria": "Roast",
-        "nomeDaDica": ""
+        "nomeDaDica": "",
+        "dicas": ""
     },
     {
         "ingredientes": ["Café", "Água"],
@@ -63,7 +67,8 @@
         "tempoDePreparo": "15 minutes",
         "quantasPessoasServe": "Serves 1",
         "categoria": "Drink",
-        "nomeDaDica": ""
+        "nomeDaDica": "",
+        "dicas": ""
     },
     {
         "ingredientes": ["Feijão", "Cebola", "Água", "Alho", "Óleo", "Louro", "Sal", "Pimenta"],
@@ -76,6 +81,7 @@
         "tempoDePreparo": "50 minutes",
         "quantasPessoasServe": "Serves 2",
         "categoria": "Cooked",
-        "nomeDaDica": "Dica: Como usar panela de pressão"
+        "nomeDaDica": "Dica: Como usar panela de pressão",
+        "dicas": " As vezes você quer fazer uma carne assada ou feijão mas não sabe usar a panela de pressão, ou simplesmente não tem uma dessas em casa por medo, e tudo bem. Vamos ensinar você a usar essa panela de modo fácil, basta ter alguns cuidados. \n \n A primeira coisa que você deve observar é que dentro dela tem uma marca de nível máximo, o que quer dizer que você só pode encher até ali com o que quer que você quer cozinhar. Se não tiver a marca, apenas encha 2/3 da panela. \n \n Coloque o alimento dentro da panela. Se for um alimento muito seco (uma carne por exemplo) coloque um pouco de água ou algum molho para a panela funcionar perfeitamente. \n \n Logo depois, tampe a panela prestando atenção na borracha da tampa. Tenha certeza que esteja bem colocada. Agora pode levar ao fogo alto (vire o botão da temperatura o máximo que o botão permitir) e espere ferver. \n \n Quando o pino começar a chiar e a balançar, coloque em fogo baixo (a menor temperatura que seu botão tiver).\n \n Depois que o tempo de cozimento da receita que você estiver fazendo passar, desligue a panela e espere esfriar para sair toda a pressão de dentro antes de abrir. NUNCA ABRA ANTES, PODE EXPLODIR. \n \n Se quiser tirar a pressão mais rápido, tire a panela do fogo e  a coloque embaixo da torneira, molhando apenas a lateral da panela. \n \n Se o pino abaixou e não faz mais barulho quando você toca nele, então toda a pressão saiu e você pode abrir a panela."
     }
 ]

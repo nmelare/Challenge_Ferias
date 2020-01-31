@@ -10,7 +10,7 @@ import UIKit
 
 class TutorialCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
-        var tutorials : [Dica] = []
+        var tutorials : [Receita] = []
 
         
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -20,9 +20,10 @@ class TutorialCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as? TutorialCollectionViewCell {
-                cell.label.text = tutorials[indexPath.row].dicas
+                cell.text.font = .systemFont(ofSize: 20)
                 return cell
             }
             return UICollectionViewCell()
     }
+    
 }

@@ -21,7 +21,7 @@ struct Receita: Codable {
         var quantasPessoasServe: String
         var categoria: String
         var nomeDaDica: String
-        
+        var dicas: String
     }
 
 class InternReceita: NSObject {

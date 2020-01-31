@@ -29,7 +29,8 @@ class RecepieViewController: UIViewController {
         @IBOutlet weak var titleOfRecepie: UILabel!
         @IBOutlet weak var serverOfRecepieLabel: UILabel!
         @IBOutlet weak var timeOfRecepieLabel: UILabel!
-        @IBOutlet weak var methodOfPreparation: UILabel!
+    @IBOutlet weak var textMethodOfPreparation: UITextView!
+    
         @IBOutlet weak var labelHeaderIngredients: UILabel!
         @IBOutlet weak var labelHeaderMethodOfPreparation: UILabel!
         
@@ -40,7 +41,7 @@ class RecepieViewController: UIViewController {
             titleOfRecepie.text = renevue.nomeDaReceita
             serverOfRecepieLabel.text = renevue.quantasPessoasServe
             timeOfRecepieLabel.text = renevue.tempoDePreparo
-            methodOfPreparation.text = renevue.modoDePreparo.joined(separator: "\n")
+            textMethodOfPreparation.text = renevue.modoDePreparo.joined(separator: "\n")
       
             viewOfRecepie.backgroundColor = .white
             viewOfRecepie.layer.cornerRadius = 20
@@ -48,7 +49,6 @@ class RecepieViewController: UIViewController {
             
             testTutorialButton.layer.cornerRadius = 20
             testTutorialButton.backgroundColor = .white
-            testTutorialButton.titleLabel?.text = renevue.nomeDaDica
             testTutorialButton.setTitle(renevue.nomeDaDica, for: .normal)
                         
         self.navigationController!.navigationBar.topItem?.title = "";

@@ -205,16 +205,19 @@
                                             <action selector="testModalButton:" destination="9J3-f1-SAr" eventType="touchUpInside" id="WcK-Rn-6qK"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MV-hp-nrI">
-                                        <rect key="frame" x="24" y="438.5" width="366" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                        <color key="textColor" red="0.63137254899999995" green="0.61176470589999998" blue="0.60784313729999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7cF-Gy-wwC">
+                                        <rect key="frame" x="24" y="430.5" width="366" height="175.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" red="0.49754901959999998" green="0.49509803920000001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="AsV-jn-fs7" firstAttribute="top" secondItem="ruD-cb-TRp" secondAttribute="top" constant="34" id="2JH-HT-XNj"/>
+                                    <constraint firstItem="7cF-Gy-wwC" firstAttribute="top" secondItem="9jJ-7y-KNt" secondAttribute="bottom" constant="8" id="3hZ-Hn-vNp"/>
                                     <constraint firstItem="ncR-MT-iVL" firstAttribute="top" secondItem="lAh-hb-5fF" secondAttribute="bottom" constant="200" id="655-Hv-Wri"/>
                                     <constraint firstItem="AsV-jn-fs7" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="8we-C2-IaT"/>
                                     <constraint firstItem="o8J-v5-9NQ" firstAttribute="leading" secondItem="s9A-u5-4MK" secondAttribute="trailing" constant="8" id="9Vu-4I-VIy"/>
@@ -223,14 +226,14 @@
                                     <constraint firstItem="iGO-Wi-lCl" firstAttribute="leading" secondItem="o8J-v5-9NQ" secondAttribute="trailing" constant="16" id="MCR-zy-X9h"/>
                                     <constraint firstItem="s9A-u5-4MK" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="OSi-nU-Hp6"/>
                                     <constraint firstItem="ncR-MT-iVL" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="SKt-7I-dmU"/>
-                                    <constraint firstItem="0MV-hp-nrI" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="V7j-rl-640"/>
+                                    <constraint firstItem="7cF-Gy-wwC" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="TzE-Vk-jbt"/>
                                     <constraint firstItem="SV9-sw-YVm" firstAttribute="leading" secondItem="iGO-Wi-lCl" secondAttribute="trailing" constant="8" id="bsF-h8-gsR"/>
-                                    <constraint firstAttribute="trailing" secondItem="0MV-hp-nrI" secondAttribute="trailing" constant="24" id="e4u-gz-xeB"/>
                                     <constraint firstItem="9jJ-7y-KNt" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="flW-O8-qKG"/>
                                     <constraint firstItem="iGO-Wi-lCl" firstAttribute="top" secondItem="ruD-cb-TRp" secondAttribute="top" constant="74" id="hFW-zq-5BN"/>
+                                    <constraint firstAttribute="bottom" secondItem="7cF-Gy-wwC" secondAttribute="bottom" constant="20" symbolic="YES" id="nR4-4w-zOK"/>
                                     <constraint firstItem="lAh-hb-5fF" firstAttribute="top" secondItem="o8J-v5-9NQ" secondAttribute="bottom" constant="40" id="nhJ-3C-fTr"/>
-                                    <constraint firstItem="0MV-hp-nrI" firstAttribute="top" secondItem="9jJ-7y-KNt" secondAttribute="bottom" constant="16" id="oXk-9h-h0J"/>
                                     <constraint firstItem="9jJ-7y-KNt" firstAttribute="top" secondItem="ncR-MT-iVL" secondAttribute="bottom" constant="16" id="rkd-rl-NuN"/>
+                                    <constraint firstAttribute="trailing" secondItem="7cF-Gy-wwC" secondAttribute="trailing" constant="24" id="tZj-do-IBB"/>
                                     <constraint firstItem="lAh-hb-5fF" firstAttribute="leading" secondItem="ruD-cb-TRp" secondAttribute="leading" constant="24" id="xUM-BT-HRf"/>
                                     <constraint firstItem="SV9-sw-YVm" firstAttribute="top" secondItem="ruD-cb-TRp" secondAttribute="top" constant="72" id="z3j-HS-haS"/>
                                 </constraints>
@@ -251,10 +254,10 @@
                     <connections>
                         <outlet property="labelHeaderIngredients" destination="lAh-hb-5fF" id="pPA-uM-rS7"/>
                         <outlet property="labelHeaderMethodOfPreparation" destination="ncR-MT-iVL" id="k1n-up-kai"/>
-                        <outlet property="methodOfPreparation" destination="0MV-hp-nrI" id="Ra9-fB-z5h"/>
                         <outlet property="pratoImagem" destination="yGX-Ew-tbu" id="Gsr-Wg-vii"/>
                         <outlet property="serverOfRecepieLabel" destination="SV9-sw-YVm" id="rUe-eG-1ou"/>
                         <outlet property="testTutorialButton" destination="9jJ-7y-KNt" id="soc-0L-V0V"/>
+                        <outlet property="textMethodOfPreparation" destination="7cF-Gy-wwC" id="bER-R7-AvH"/>
                         <outlet property="timeOfRecepieLabel" destination="o8J-v5-9NQ" id="GLc-8s-feV"/>
                         <outlet property="titleOfRecepie" destination="AsV-jn-fs7" id="tJj-SE-rgt"/>
                         <outlet property="viewOfRecepie" destination="ruD-cb-TRp" id="ycu-Xn-3mH"/>
