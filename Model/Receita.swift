@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct Receita: Codable {
-  var ingredientes: [String]
+        var ingredientes: [String]
         var imagensDosIngredientes: [String]
         var quantidade: [String]
         var modoDePreparo: [String]
@@ -20,7 +20,8 @@ struct Receita: Codable {
         var tempoDePreparo: String
         var quantasPessoasServe: String
         var categoria: String
-        
+        var nomeDaDica: String
+        var dicas: String
     }
 
 class InternReceita: NSObject {

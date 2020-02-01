@@ -29,6 +29,7 @@ class SettingsModal: NSObject {
         tutorialCollectionView.dataSource = tutorialCollectionViewDataSource
         tutorialCollectionView.delegate = tutorialCollectionViewDelegate
         tutorialCollectionView.register(TutorialCollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
+        
     }
     
     func handleMore() {
@@ -60,6 +61,7 @@ class SettingsModal: NSObject {
         if let window = UIApplication.shared.keyWindow {
             
             tutorialCollectionView.frame = CGRect(x: 0, y: window.frame.height, width: window.frame.width, height: height)
+            tutorialCollectionView.layer.cornerRadius = 30
             
             window.addSubview(tutorialCollectionView)
         }
