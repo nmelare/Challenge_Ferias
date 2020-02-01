@@ -29,6 +29,8 @@ class SettingsModal: NSObject {
         tutorialCollectionView.dataSource = tutorialCollectionViewDataSource
         tutorialCollectionView.delegate = tutorialCollectionViewDelegate
         tutorialCollectionView.register(TutorialCollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
+        
+        tutorialCollectionView.layer.cornerRadius = 30
     }
     
     func handleMore() {
