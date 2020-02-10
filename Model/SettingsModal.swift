@@ -15,7 +15,11 @@ class SettingsModal: NSObject {
     var tutorialCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let tutorialCollectionInformation = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        tutorialCollectionInformation.backgroundColor = UIColor.white
+        if #available(iOS 13.0, *) {
+            tutorialCollectionInformation.backgroundColor = UIColor.systemGray6
+        } else {
+           tutorialCollectionInformation.backgroundColor = UIColor.white
+        }
         return tutorialCollectionInformation
     }()
     let height:CGFloat = 600
