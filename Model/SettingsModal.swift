@@ -35,7 +35,7 @@ class SettingsModal: NSObject {
         tutorialCollectionView.register(TutorialCollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         
     }
-    
+   // MARK: - Set Up Background Color
     func handleMore() {
         
         if let window = UIApplication.shared.keyWindow {
@@ -50,7 +50,7 @@ class SettingsModal: NSObject {
             
         }
     }
-    
+    // MARK: - Set Up Animation Clicked
     func firstAnimationModal() {
         if let window = UIApplication.shared.keyWindow {
             let y = window.frame.height - height
@@ -60,7 +60,7 @@ class SettingsModal: NSObject {
             }
         }
     }
-    
+    // MARK: - Set Up CollectionView
     func collectionViewSetUp() {
         if let window = UIApplication.shared.keyWindow {
             
@@ -70,7 +70,7 @@ class SettingsModal: NSObject {
             window.addSubview(tutorialCollectionView)
         }
     }
-    
+    // MARK: - Set Up Animation Dismiss
     @objc func handleDismiss() {
         UIView.animate(withDuration: 0.5) {
             self.blackView.alpha = 0
