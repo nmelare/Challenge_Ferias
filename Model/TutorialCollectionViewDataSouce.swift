@@ -17,7 +17,7 @@ class TutorialCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as? TutorialCollectionViewCell {
-                cell.text.font = .systemFont(ofSize: 20)
+                cell.text.font = .systemFont(ofSize: 16)
                 return cell
             }
             return UICollectionViewCell()

@@ -42,11 +42,12 @@ class RecepieViewController: UIViewController {
                         serverOfRecepieLabel.text = renevue.quantasPessoasServe
                         timeOfRecepieLabel.text = renevue.tempoDePreparo
                         textMethodOfPreparation.text = renevue.modoDePreparo.joined(separator: "\n")
+            textMethodOfPreparation.isEditable = false
                   
                         viewOfRecepie.layer.cornerRadius = 20
                         view.addSubview(viewOfRecepie)
                         
-                        testTutorialButton.layer.cornerRadius = 20
+                        testTutorialButton.layer.cornerRadius = 10
                         testTutorialButton.setTitle(renevue.nomeDaDica, for: .normal)
                                     
                     self.navigationController!.navigationBar.topItem?.title = "";
