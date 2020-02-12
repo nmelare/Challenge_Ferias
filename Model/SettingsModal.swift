@@ -11,7 +11,9 @@ import UIKit
 
 class SettingsModal: NSObject {
     
+    let height:CGFloat = 600
     let blackView = UIView()
+    
     var tutorialCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let tutorialCollectionInformation = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -22,19 +24,21 @@ class SettingsModal: NSObject {
         }
         return tutorialCollectionInformation
     }()
-    let height:CGFloat = 600
-    
+        
     var tutorialCollectionViewDataSource = TutorialCollectionViewDataSource()
     var tutorialCollectionViewDelegate = TutorialCollectionViewDelegate()
     
-    override init() {
+    init(recipe: Receita) {
         super .init()
         
         tutorialCollectionView.dataSource = tutorialCollectionViewDataSource
         tutorialCollectionView.delegate = tutorialCollectionViewDelegate
+        tutorialCollectionViewDataSource.text = recipe.dicas
+        tutorialCollectionViewDataSource.title = recipe.nomeDaDica
         tutorialCollectionView.register(TutorialCollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         
     }
+    
    // MARK: - Set Up Background Color
     func handleMore() {
         
@@ -47,7 +51,6 @@ class SettingsModal: NSObject {
             blackView.frame = window.frame
             
             window.addSubview(blackView)
-            
         }
     }
     // MARK: - Set Up Animation Clicked
