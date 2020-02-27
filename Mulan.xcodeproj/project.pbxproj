@@ -35,8 +35,8 @@
 		6FAD5A89240836F00046E53C /* TutoriaisPortugues.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F9EBD6022FB50250089DCD7 /* TutoriaisPortugues.json */; };
 		6FAD5A8A240836F00046E53C /* ReceitasPortugues.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F9EBD5E22FB4FE90089DCD7 /* ReceitasPortugues.json */; };
 		6FAD5A8B240836F30046E53C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F9EBD5C22FB4B160089DCD7 /* Localizable.strings */; };
+ 9378bec30b7955697fe508b55f30ad8836dbcde8
 		6FE7B417228A1C1000422A92 /* ReceitasIngles.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7B416228A1C1000422A92 /* ReceitasIngles.json */; };
-		6FE7B423228BB20500422A92 /* TutoriaisIngles.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7B422228BB20500422A92 /* TutoriaisIngles.json */; };
 		6FE7B425228BB5AA00422A92 /* Dica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7B424228BB5AA00422A92 /* Dica.swift */; };
 		6FE7B42C228DF22100422A92 /* Receita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7B42B228DF22100422A92 /* Receita.swift */; };
 		E037E2C823E1015300A21059 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037E2C723E1015300A21059 /* MenuTableViewController.swift */; };
@@ -87,6 +87,7 @@
 		6F9EBD5B22FB4B160089DCD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6F9EBD5D22FB4B180089DCD7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6F9EBD5E22FB4FE90089DCD7 /* ReceitasPortugues.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ReceitasPortugues.json; sourceTree = "<group>"; };
+
 		6F9EBD6022FB50250089DCD7 /* TutoriaisPortugues.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TutoriaisPortugues.json; sourceTree = "<group>"; };
 		6FAD5A6D240831610046E53C /* MessageApp.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageApp.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAD5A6F240831620046E53C /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
@@ -97,8 +98,8 @@
 		6FAD5A81240832BF0046E53C /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		6FAD5A84240836400046E53C /* Cuisine101.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cuisine101.entitlements; sourceTree = "<group>"; };
 		6FAD5A85240836510046E53C /* MessageApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessageApp.entitlements; sourceTree = "<group>"; };
+ 9378bec30b7955697fe508b55f30ad8836dbcde8
 		6FE7B416228A1C1000422A92 /* ReceitasIngles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ReceitasIngles.json; sourceTree = "<group>"; };
-		6FE7B422228BB20500422A92 /* TutoriaisIngles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TutoriaisIngles.json; sourceTree = "<group>"; };
 		6FE7B424228BB5AA00422A92 /* Dica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dica.swift; sourceTree = "<group>"; };
 		6FE7B42B228DF22100422A92 /* Receita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receita.swift; sourceTree = "<group>"; };
 		E037E2C723E1015300A21059 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
@@ -218,9 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				6F9EBD5C22FB4B160089DCD7 /* Localizable.strings */,
-				6FE7B422228BB20500422A92 /* TutoriaisIngles.json */,
 				6FE7B416228A1C1000422A92 /* ReceitasIngles.json */,
-				6F9EBD6022FB50250089DCD7 /* TutoriaisPortugues.json */,
 				6F9EBD5E22FB4FE90089DCD7 /* ReceitasPortugues.json */,
 			);
 			path = Localizable;
@@ -308,8 +307,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F9EBD6122FB50250089DCD7 /* TutoriaisPortugues.json in Resources */,
-				6FE7B423228BB20500422A92 /* TutoriaisIngles.json in Resources */,
 				6F9EBD5A22FB4B160089DCD7 /* Localizable.strings in Resources */,
 				6F673F252282034E00506FD9 /* LaunchScreen.storyboard in Resources */,
 				6F673F222282034E00506FD9 /* Assets.xcassets in Resources */,
@@ -541,18 +538,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Cuisine101.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = D6BLGKTBJB;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PUT3745C65;
 				INFOPLIST_FILE = Mulan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cousine101;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -570,11 +567,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cousine101;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

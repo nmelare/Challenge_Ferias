@@ -11,27 +11,35 @@ import UIKit
 
 class SettingsModal: NSObject {
     
+    let height:CGFloat = 600
     let blackView = UIView()
+    
     var tutorialCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let tutorialCollectionInformation = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        tutorialCollectionInformation.backgroundColor = UIColor.white
+        if #available(iOS 13.0, *) {
+            tutorialCollectionInformation.backgroundColor = UIColor.systemGray6
+        } else {
+           tutorialCollectionInformation.backgroundColor = UIColor.white
+        }
         return tutorialCollectionInformation
     }()
-    let height:CGFloat = 600
-    
+        
     var tutorialCollectionViewDataSource = TutorialCollectionViewDataSource()
     var tutorialCollectionViewDelegate = TutorialCollectionViewDelegate()
     
-    override init() {
+    init(recipe: Receita) {
         super .init()
         
         tutorialCollectionView.dataSource = tutorialCollectionViewDataSource
         tutorialCollectionView.delegate = tutorialCollectionViewDelegate
+        tutorialCollectionViewDataSource.text = recipe.dicas
+        tutorialCollectionViewDataSource.title = recipe.nomeDaDica
         tutorialCollectionView.register(TutorialCollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         
     }
     
+   // MARK: - Set Up Background Color
     func handleMore() {
         
         if let window = UIApplication.shared.keyWindow {
@@ -43,10 +51,9 @@ class SettingsModal: NSObject {
             blackView.frame = window.frame
             
             window.addSubview(blackView)
-            
         }
     }
-    
+    // MARK: - Set Up Animation Clicked
     func firstAnimationModal() {
         if let window = UIApplication.shared.keyWindow {
             let y = window.frame.height - height
@@ -56,7 +63,7 @@ class SettingsModal: NSObject {
             }
         }
     }
-    
+    // MARK: - Set Up CollectionView
     func collectionViewSetUp() {
         if let window = UIApplication.shared.keyWindow {
             
@@ -66,7 +73,7 @@ class SettingsModal: NSObject {
             window.addSubview(tutorialCollectionView)
         }
     }
-    
+    // MARK: - Set Up Animation Dismiss
     @objc func handleDismiss() {
         UIView.animate(withDuration: 0.5) {
             self.blackView.alpha = 0
