@@ -14,7 +14,7 @@ class IngredientsCollectionViewCell: UICollectionViewCell {
     
     var data: RecepieViewController.Ingredient? {
         didSet {
-            guard let data =  data else { return }
+            guard let data = data else { return }
             nameOfIngredientLabel.text = data.name
             imageOfIngredient.image = data.image
             doseOfIngredientLabel.text = data.dose
