@@ -20,14 +20,6 @@ class MenuTableViewController: UITableViewController {
     var filterRenevue: [Receita] = []
     let searchBar = UISearchBar()
     
-    let sizeSegmentadIndicator = UIScreen.main.bounds.width / 5
-    let segmentindicator: UIView = {
-    let v = UIView()
-    v.translatesAutoresizingMaskIntoConstraints = false
-    v.backgroundColor = #colorLiteral(red: 0.831372549, green: 0.3019607843, blue: 0.3529411765, alpha: 1)
-    return v
-    }()
-    
     // MARK: - Table view data source
     @IBOutlet weak var SegmentedControlOutlet: UISegmentedControl!
     
@@ -44,12 +36,6 @@ class MenuTableViewController: UITableViewController {
         SegmentedControlOutlet.tintColor = .clear
         SegmentedControlOutlet.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.init(name: "Avenir-Medium", size: 17) ?? UIFont.boldSystemFont(ofSize: 21),NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.8326148391, green: 0.3012730181, blue: 0.3521553278, alpha: 1)], for: .selected)
         SegmentedControlOutlet.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.init(name: "Avenir-Medium", size: 16) ?? UIFont.boldSystemFont(ofSize: 21),NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .normal)
-        
-        self.view.addSubview(segmentindicator)
-        segmentindicator.topAnchor.constraint(equalTo: SegmentedControlOutlet.bottomAnchor).isActive = true
-        segmentindicator.heightAnchor.constraint(equalToConstant: 2).isActive = true
-        SegmentedControlOutlet.leftAnchor.constraint(equalTo: SegmentedControlOutlet.leftAnchor).isActive = true
-        segmentindicator.widthAnchor.constraint(equalTo: SegmentedControlOutlet.widthAnchor, multiplier: 1 / CGFloat(SegmentedControlOutlet.numberOfSegments)).isActive = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -117,25 +103,6 @@ class MenuTableViewController: UITableViewController {
         default:
             break
         }
-        
-        // MARK: - Construction of segment indicator
-                
-        let numberOfSegments = CGFloat(SegmentedControlOutlet.numberOfSegments)
-        let selectedIndex = CGFloat(sender.selectedSegmentIndex)
-        segmentindicator.frame.origin.x = ((SegmentedControlOutlet.frame.width / numberOfSegments) * selectedIndex)
-        print(segmentindicator.frame.origin.x)
-            
-//            (selectedIndex * sizeSegmentadIndicator) - centerXMore)
-
-        UIView.animate(withDuration: 0.5, animations: {
-        self.segmentindicator.transform = CGAffineTransform(scaleX: 0.4, y: 1)
-            self.view.layoutIfNeeded()
-        }) { (finish) in
-        UIView.animate(withDuration: 0.4, animations: {
-        self.segmentindicator.transform = CGAffineTransform.identity
-            self.view.layoutIfNeeded()
-        })
-        }
         tableView.reloadData()
     }
     
@@ -186,6 +153,7 @@ class MenuTableViewController: UITableViewController {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "IDMenuCell") as? CardsMenuTableViewCell {
             
             cell.imageRecipeCardMenu.image = UIImage(named: filterRenevue[indexPath.row].nomeDaImagemMenu)
+            cell.imageRecipeCardMenu.layer.cornerRadius = 15
             cell.labelNameRecipeCardMenu.text = filterRenevue[indexPath.row].nomeDaReceita
             cell.labelTimeRecipeCardMenu.text = filterRenevue[indexPath.row].tempoDePreparo
             cell.labelPeopleRecipeCardMenu.text = filterRenevue[indexPath.row].quantasPessoasServe
