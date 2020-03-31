@@ -20,6 +20,7 @@ class MenuTableViewController: UITableViewController {
     var filterRenevue: [Receita] = []
     let searchBar = UISearchBar()
     
+    let sizeSegmentadIndicator = UIScreen.main.bounds.width / 5
     let segmentindicator: UIView = {
     let v = UIView()
     v.translatesAutoresizingMaskIntoConstraints = false
@@ -47,8 +48,8 @@ class MenuTableViewController: UITableViewController {
         self.view.addSubview(segmentindicator)
         segmentindicator.topAnchor.constraint(equalTo: SegmentedControlOutlet.bottomAnchor).isActive = true
         segmentindicator.heightAnchor.constraint(equalToConstant: 2).isActive = true
-        segmentindicator.widthAnchor.constraint(equalToConstant: CGFloat(15 + SegmentedControlOutlet.titleForSegment(at: 0)!.count * 8)).isActive = true
-        segmentindicator.centerXAnchor.constraint(equalToSystemSpacingAfter: SegmentedControlOutlet.centerXAnchor, multiplier: 0/4).isActive = true
+        SegmentedControlOutlet.leftAnchor.constraint(equalTo: SegmentedControlOutlet.leftAnchor).isActive = true
+        segmentindicator.widthAnchor.constraint(equalTo: SegmentedControlOutlet.widthAnchor, multiplier: 1 / CGFloat(SegmentedControlOutlet.numberOfSegments)).isActive = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -118,16 +119,16 @@ class MenuTableViewController: UITableViewController {
         }
         
         // MARK: - Construction of segment indicator
+                
         let numberOfSegments = CGFloat(SegmentedControlOutlet.numberOfSegments)
         let selectedIndex = CGFloat(sender.selectedSegmentIndex)
-        let titlecount = CGFloat((SegmentedControlOutlet.titleForSegment(at: sender.selectedSegmentIndex)!.count))
-        segmentindicator.topAnchor.constraint(equalToSystemSpacingBelow: SegmentedControlOutlet.bottomAnchor, multiplier: 0.3).isActive = true
-        segmentindicator.heightAnchor.constraint(equalToConstant: 2).isActive = true
-        segmentindicator.widthAnchor.constraint(equalToConstant: CGFloat(15 + titlecount * 10)).isActive = true
-        segmentindicator.centerXAnchor.constraint(equalToSystemSpacingAfter: SegmentedControlOutlet.centerXAnchor, multiplier:  numberOfSegments/CGFloat(3.0 + CGFloat(selectedIndex-1.0)*2.0)).isActive = true
+        segmentindicator.frame.origin.x = ((SegmentedControlOutlet.frame.width / numberOfSegments) * selectedIndex)
+        print(segmentindicator.frame.origin.x)
+            
+//            (selectedIndex * sizeSegmentadIndicator) - centerXMore)
 
         UIView.animate(withDuration: 0.5, animations: {
-        self.segmentindicator.transform = CGAffineTransform(scaleX: 1.4, y: 1)
+        self.segmentindicator.transform = CGAffineTransform(scaleX: 0.4, y: 1)
             self.view.layoutIfNeeded()
         }) { (finish) in
         UIView.animate(withDuration: 0.4, animations: {
